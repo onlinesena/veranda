@@ -14,8 +14,12 @@
     color: var(--color-primary);
   }
   /*COMMON*/
-  /*NAVBAR*/
-  .navbar {
-      font-family: "Oswald", sans serif;
+  /*SLIDER*/
+  .slider .carousel-item {
+      height: 100vh;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
   }
-  /*NAVBAR*/
+
+   /*SLIDER*/
