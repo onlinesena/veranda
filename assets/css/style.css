@@ -1,3 +1,4 @@
+/*COMMON*/
 :root {
     --color-primary: #905729;
     --color-primary-hover: #693e1a;
@@ -12,3 +13,9 @@
   a:hover {
     color: var(--color-primary);
   }
+  /*COMMON*/
+  /*NAVBAR*/
+  .navbar {
+      font-family: "Oswald", sans serif;
+  }
+  /*NAVBAR*/
