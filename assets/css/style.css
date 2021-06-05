@@ -56,7 +56,55 @@
    /*SLIDER*/
 
    /* SECTION PROJECT */
-  section.project {
-    margin: 2rem;
-  }
+   section.project {
+       margin: 2rem;
+   }
+  section.project a {
+      display: block;
+      position: relative;
+      text-align: center;
+      color: var(--color-primary);
+      overflow: hidden;
+      }
+    section.project a::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.555);
+        opacity: 0;
+        transition: opacity 1s;
+    }  
+    section.project a:hover::after {
+        opacity: 1;
+      }  
+    section.project img {
+        transition: transform 0.5s;
+    }  
+    section.project a:hover img {
+        transform: scale(1.2);
+    }  
+    section.project .title {
+        position: absolute;
+        top: 2rem;
+        left: 50%;
+        transform: translateX(-50%);
+    }  
+    /*block elementleri ortalamanın en kolay yolu margin auto*/
+    section.project .title h6::after {              
+        content: "";
+        display: block;
+        background-color: var(--color-primary);
+        height: 3px;
+        width: 50%;
+        margin: 0.5rem auto;
+    }
+    section.project .btn {
+        position: absolute;
+        bottom: 2rem;
+        left: 50%;
+        transform: translateX(-50%);
+    }
   /* SECTION PROJECT */

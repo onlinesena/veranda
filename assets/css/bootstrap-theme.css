@@ -42,3 +42,7 @@
     padding: 1rem 2rem;
     font-size: 0.9rem;
 }
+.btn-outline-primary:hover,
+.btn-outline-primary {
+    border-color: var(--color-primary);
+}
